@@ -6,7 +6,7 @@ ENV DEFAULT_OVALEDGE_BIGQUERY_MAX_CONNECTIONS=10
 
 WORKDIR /root/temp/ovaledge.war
 
-RUN wget https://ovaledge.s3.us-west-1.amazonaws.com/Release+Builds/Release5.1.7/ovaledge.war
+RUN wget https://ovaledge.s3.us-west-1.amazonaws.com/Release+Builds/Release5.2.5/ovaledge.war 
 
 COPY catalina.properties /root/temp/catalina.properties
 
