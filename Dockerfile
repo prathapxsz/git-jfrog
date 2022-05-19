@@ -15,7 +15,7 @@ RUN apk add --no-cache \
 
 RUN wget https://jenkins-ovaledge-s3.s3.amazonaws.com/jenkins-5.3-s3/488/ovaledge.war
 
-RUN cp ovaledge.war /root/temp/ovaledge.war
+RUN cp ovaledge.war /root/temp/
 COPY catalina.properties /root/temp/catalina.properties
 
 
