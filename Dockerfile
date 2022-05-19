@@ -12,8 +12,10 @@ RUN apk add --no-cache \
     && pip3 install --no-cache-dir \
         awscli \
     && rm -rf /var/cache/apk/*
-#RUN wget https://jenkins-ovaledge-s3.s3.amazonaws.com/jenkins-5.3-s3/488/ovaledge.war
-COPY ovaledge.war /root/temp/ovaledge.war
+
+RUN wget https://jenkins-ovaledge-s3.s3.amazonaws.com/jenkins-5.3-s3/488/ovaledge.war
+
+RUN cp ovaledge.war /root/temp/ovaledge.war
 COPY catalina.properties /root/temp/catalina.properties
 
 
